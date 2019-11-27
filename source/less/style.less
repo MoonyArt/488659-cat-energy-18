@@ -1,6 +1,7 @@
 @import "fonts.less";
-@import "mixins.less";
+@import "global.less";
 @import "variables.less";
+@import "blocks/button.less";
 @import "blocks/catalog.less";
 @import "blocks/contacts.less";
 @import "blocks/copyright.less";
@@ -8,72 +9,7 @@
 @import "blocks/features.less";
 @import "blocks/main-nav.less";
 @import "blocks/page-footer.less";
-@import "blocks/page-header.less";
-@import "blocks/page-main.less";
 @import "blocks/promo-catalog.less";
 @import "blocks/promo.less";
-@import "blocks/range.less";
 @import "blocks/slider-list.less";
 @import "blocks/social-list.less";
-
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: @black-three-color;
-
-  background-color: @white-color;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: @white-color;
-  border: none;
-
-  background-color: @leaf-color;
-}
-
-a.button:hover {
-  background-color: @grass-color;
-}
-
-a.button:active {
-  color: @white-30-color;
-  background-color: @grass-color;
-}

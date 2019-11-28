@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -12,16 +13,16 @@
           <a class="main-nav__logo">
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип магазина «Кэт энерджи»">
           </a>
-          <button class="main-nav__toggle" type="button" name="main-nav-button"></button>
+          <button class="main-nav__toggle" type="button" name="main-nav-button" aria-label="Main menu"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -31,7 +32,7 @@
           <h1 class="promo__page-title">Функциональное питание для котов</h1>
           <p class="promo__page-slogan">Занялся собой? Займись котом!</p>
           <a class="promo__program-button button" href="form.html">Подобрать программу</a>
-          <img class="promo__product-image" src="img/promo-mobile.jpg" width="280" height="270" alt="Питание CAT ENERGY PRO с Курицей">
+          <img class="promo__product-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Питание CAT ENERGY PRO с Курицей">
         </div>
       </div>
     </header>
@@ -41,17 +42,17 @@
       <section class="promo-catalog">
         <div class="container">
           <div class="promo-catalog__wrapper">
-            <h2 class="visually-hidden">Разделы каталога - система питания</h2>
+            <h2 class="visually-hidden">Разделы каталога - системы питания</h2>
               <ul class="promo-catalog__list">
                 <li class="promo-catalog__item">
                   <h3 class="promo-catalog__title">Похудение</h3>
                   <p class="promo-catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                  <a class="promo-catalog__link button" href="#">Каталог slim</a>
+                  <a class="promo-catalog__link" href="#">Каталог slim</a>
                 </li>
                 <li class="promo-catalog__item">
                   <h3 class="promo-catalog__title">Набор массы</h3>
                   <p class="promo-catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                  <a class="promo-catalog__link button" href="#">Каталог pro</a>
+                  <a class="promo-catalog__link" href="#">Каталог pro</a>
                 </li>
               </ul>
           </div>
@@ -93,14 +94,14 @@
               <b class="example__value">60 дней</b>
               <p class="example__field">Затрачено времени</p>
             </div>
-            <p>Затраты на питание: 15 000 руб.</p>
+            <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
 
             <ul class="example__list slider-list">
               <li class="slider-list__item">
-                <img class="slider-list__image" src="img/fat-cat.jpg" width="311" height="232"  alt="Фото кота до замены питания">
+                <img class="slider-list__image" src="img/before-mobile@1x.png" width="311" height="232"  alt="Фото кота до замены питания">
               </li>
               <li class="slider-list__item">
-                <img class="slider-list__image" src="img/slim-cat.jpg" width="311" height="232" alt="Фото кота после замены питания">
+                <img class="slider-list__image" src="img/after-mobile@1x.png" width="311" height="232" alt="Фото кота после замены питания">
               </li>
             </ul>
             <button class="example__button example__button--before" type="button" name="button-before">Было</button>
@@ -124,22 +125,22 @@
         </div>
       </div>
       <a class="page-footer__map-link" href="#">
-        <img class="page-footer__map-image" width="320" height="400" src="img/map-mobile.jpg" alt="Офис Компании по адресу: улица Большая Конюшенная 19/8, Санкт-Петербург">
+        <img class="page-footer__map-image" width="320" height="400" src="img/bg-map-mobile@1x.png" alt="Офис Компании по адресу: улица Большая Конюшенная 19/8, Санкт-Петербург">
       </a>
       <div class="container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo">
-            <img class="page-footer__logo-image" width="128" height="24" src="img/logo-footer-mobile.svg" alt="Логотип магазина «Кэт энерджи»">
+            <img class="page-footer__logo-image" width="128" height="24" src="img/logo-footer.svg" alt="Логотип магазина «Кэт энерджи»">
           </a>
           <ul class="page-footer__social-list social-list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+              <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy" aria-label="Vkontacte"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--inst" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+              <a class="social-list__link social-list__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Instagram"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+              <a class="social-list__link social-list__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Facebook"></a>
             </li>
           </ul>
           <div class="page-footer__copyright copyright">

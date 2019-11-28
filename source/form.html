@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -12,16 +13,16 @@
           <a class="main-nav__logo" href="index.html">
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип магазина «Кэт энерджи»">
           </a>
-          <button class="main-nav__toggle" type="button" name="main-nav-button"></button>
+          <button class="main-nav__toggle" type="button" name="main-nav-button" aria-label="Main menu"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a>Подбор программы</a>
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -40,22 +41,22 @@
         </div>
       </div>
       <a class="page-footer__map-link" href="#">
-        <img class="page-footer__map-image" width="320" height="400" src="img/map-mobile.jpg" alt="Офис Компании по адресу: улица Большая Конюшенная 19/8, Санкт-Петербург">
+        <img class="page-footer__map-image" width="320" height="400" src="img/bg-map-mobile@1x.png" alt="Офис Компании по адресу: улица Большая Конюшенная 19/8, Санкт-Петербург">
       </a>
       <div class="container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-image" width="128" height="24" src="img/logo-footer-mobile.svg" alt="Логотип магазина «Кэт энерджи»">
+            <img class="page-footer__logo-image" width="128" height="24" src="img/logo-footer.svg" alt="Логотип магазина «Кэт энерджи»">
           </a>
           <ul class="page-footer__social-list social-list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+              <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy" aria-label="Vkontacte"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--inst" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+              <a class="social-list__link social-list__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Instagram"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+              <a class="social-list__link social-list__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Facebook"></a>
             </li>
           </ul>
           <div class="page-footer__copyright copyright">

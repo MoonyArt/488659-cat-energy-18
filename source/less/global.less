@@ -39,24 +39,23 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-// .container {
-//   width: 280px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-// }
-//
-// @media (min-width: @tablet-width) {
-//   .container {
-//     width: auto;
-//     margin: 0 auto;
-//     padding: 0 30px;
-//   }
-// }
-//
-// @media (min-width: @desktop-width) {
-//   .container {
-//     width: auto;
-//     margin: 0 auto;
-//     padding: 0 110px;
-//   }
-// }
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: @tablet-width;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: @desktop-width;
+    padding: 0 110px;
+  }
+}

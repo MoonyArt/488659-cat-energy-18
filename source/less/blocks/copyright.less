@@ -1,10 +1,28 @@
+.copyright {
+  margin-top: 22px;
+  padding-bottom: 22px;
+}
+
 .copyright__link {
+  display: block;
+  box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: @greyish-brown-color;
 
+  padding-right: 50px;
+
   &:active {
     color: @greyish-brown-30-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    align-self: center;
+
+    margin: 0;
+    padding: 0;
   }
 }

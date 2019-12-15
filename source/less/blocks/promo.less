@@ -1,19 +1,26 @@
 .promo {
+  position: relative;
+  text-align: center;
   color: @white-color;
 
-  background-color: @leaf-color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-color: @leaf-color;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(180deg, @leaf-color 62.4%, @white-color 62.4%);
+  background-size: 320px 305px, 100%;
   background-position: top center;
   background-repeat: no-repeat;
+
+  padding-top: 4px;
+  padding-bottom: 10px;
 }
 
 .promo__page-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: @white-color;
 
   margin: 0;
+  margin-top: 25px;
+  margin-bottom: 19px;
   padding: 0;
 }
 
@@ -21,13 +28,111 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: @white-color;
 
   margin: 0;
   padding: 0;
 }
 
+.promo__product-image {
+  display: block;
+  width: 280px;
+  height: 270px;
+
+  margin-top: 29px;
+  margin-bottom: 3px;
+}
+
 .promo__program-button {
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    padding-bottom: 529px;
+    text-align: left;
+    color: @black-three-color;
+    background-image: none;
+
+    padding-top: 8px;
+  }
+
+  .promo__page-title {
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 33px;
+  }
+
+  .promo__page-slogan {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  .promo__product-image {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 709px;
+    height: 609px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .promo__program-button {
+    position: relative;
+    z-index: 2;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 48px;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding-top: 42px;
+    padding-bottom: 188px;
+  }
+
+  .promo__page-title {
+    width: 500px;
+    margin-top: 42px;
+    margin-left: 83px;
+    margin-right: auto;
+  }
+
+  .promo__page-slogan {
+    width: 500px;
+    margin-left: 80px;
+    margin-right: auto;
+  }
+
+  .promo__product-image {
+    top: 0;
+    bottom: auto;
+    transform: translateX(-30%);
+    width: 552px;
+    height: 499px;
+  }
+
+  .promo__program-button {
+    margin-top: 53px;
+    margin-left: 80px;
+    margin-right: auto;
+  }
 }

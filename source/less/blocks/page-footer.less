@@ -3,11 +3,34 @@
 }
 
 .page-footer__logo {
+  display: block;
+  text-align: center;
+
+  margin-top: 39px;
+  margin-bottom: 31px;
+
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
   }
 }

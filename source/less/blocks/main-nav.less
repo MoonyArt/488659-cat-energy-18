@@ -1,8 +1,12 @@
 
 .main-nav {
   color: @black-three-color;
+}
 
-  padding-top: 11px;
+.main-nav__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
 }
 
 .main-nav__logo {
@@ -18,6 +22,7 @@
 }
 
 .main-nav__logo-image {
+  position: relative;
   display: block;
   width: 191px;
   height: 39px;
@@ -25,7 +30,7 @@
 
 .main-nav__toggle {
   position: relative;
-  display: none;
+  display: block;
   cursor: pointer;
   width: 25px;
   height: 19px;
@@ -35,6 +40,44 @@
 
   margin-left: auto;
   padding: 0;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: @black-two-color;
+  box-shadow: 0 9px 0 0 @black-two-color, 0 18px 0 0 @black-two-color;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: @black-two-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__list {
@@ -62,12 +105,22 @@
 
   padding: 22px 0 23px;
 
-  &:hover {
+  &[href]:hover {
     opacity: 0.6;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -79,6 +132,10 @@
 
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  .main-nav__wrapper {
+    padding: 0;
   }
 
   .main-nav__logo-image {
@@ -103,6 +160,23 @@
     margin-left: 35px;
     margin-right: 0;
     border-top: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+
+        height: 2px;
+
+        background: @leaf-color;
+      }
+    }
   }
 
   .main-nav__link {
@@ -130,6 +204,10 @@
 
   .main-nav__item {
     margin-left: 35px;
+  }
+
+  .main-nav__item--index.main-nav__item--active::after {
+    background: @white-color;
   }
 
   .main-nav__link {

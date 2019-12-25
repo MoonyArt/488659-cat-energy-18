@@ -5,6 +5,7 @@
 
 .copyright__link {
   display: block;
+  position: relative;
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -13,8 +14,30 @@
 
   padding-right: 50px;
 
+  &:hover {
+    path {
+      fill: @leaf-color;
+    }
+  }
+
   &:active {
     color: @greyish-brown-30-color;
+
+    path {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__link-icon {
+  position: absolute;
+  top: -9px;
+  left: 257px;
+  width: 27px;
+  height: 34px;
+
+  path {
+    fill: @brownish-grey-color;
   }
 }
 
@@ -24,5 +47,9 @@
 
     margin: 0;
     padding: 0;
+  }
+
+  .copyright__link-icon {
+    left: 140px;
   }
 }

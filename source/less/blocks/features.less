@@ -17,8 +17,45 @@
 }
 
 .features__item {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 24px;
   padding-left: 80px;
+  padding-top: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @leaf-color;
+  }
+
+  &--icon-1::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-2::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-3::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-4::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__description {
@@ -39,20 +76,73 @@
   }
 
   .features__list {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
 
-    margin-bottom: 55px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -30px;
+      bottom: 0;
+      width: 768px;
+      height: 1px;
+      background-color: @pinkish-grey-color;
+    }
   }
 
   .features__item {
     flex-grow: 1;
+    width: 245px;
     margin: 0;
+    margin-bottom: 55px;
     padding: 117px 0 50px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: @light-grey-color;
+    }
+
+    &--icon-1::after {
+      content: "1";
+      top: -40px;
+      left: 118px;
+    }
+
+    &--icon-2::after {
+      content: "2";
+      top: -40px;
+      left: 114px;
+    }
+
+    &--icon-3::after {
+      content: "3";
+      top: -40px;
+      left: 116px;
+    }
+
+    &--icon-4::after {
+      content: "4";
+      top: -40px;
+      left: 116px;
+    }
   }
 
   .features__description {
+    position: relative;
+    z-index: 5;
     width: 245px;
     font-size: 16px;
     line-height: 24px;
@@ -61,6 +151,11 @@
 
 @media (min-width: @desktop-width) {
   .features__list {
-    margin-bottom: 27px;
+    justify-content: space-between;
+    margin-bottom: 33px;
+  }
+
+  .features__item {
+    flex-grow: 0;
   }
 }

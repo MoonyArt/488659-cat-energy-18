@@ -7,9 +7,7 @@
   border-bottom: 1px solid @pinkish-grey-color;
 
   margin: 0;
-  padding: 0;
-  padding-top: 24px;
-  padding-bottom: 21px;
+  padding: 16px 0;
 }
 
 .social-list__item {
@@ -17,22 +15,61 @@
   height: 30px;
   cursor: pointer;
 
-  // Временно для наглядности
-  background-color: red;
-
   &:nth-child(1) {
-    margin-right: 36px;
+    margin-right: 25px;
   }
 
   &:nth-child(2) {
-    margin-right: 40px;
+    margin-right: 24px;
   }
 }
 
 .social-list__link {
+  position: relative;
   width: 30px;
   height: 30px;
   color: @brownish-grey-color;
+}
+
+.social-list__link-icon {
+  position: absolute;
+
+  path {
+    fill: @brownish-grey-color;
+  }
+
+  &:hover {
+    path {
+      fill: @leaf-color;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
+
+  &--vk {
+    top: 9px;
+    left: 4px;
+    width: 22px;
+    height: 12px;
+  }
+
+  &--inst {
+    top: 7px;
+    left: 7px;
+    width: 17px;
+    height: 17px;
+  }
+
+  &--fb {
+    top: 6px;
+    left: 10px;
+    width: 10px;
+    height: 19px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -40,5 +77,38 @@
     border: 0;
     margin: 0;
     padding: 0;
+  }
+
+  .social-list__item {
+    &:nth-child(1) {
+      margin-right: 24px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 17px;
+    }
+  }
+
+  .social-list__link-icon {
+    &--vk {
+      top: 7px;
+      left: 0;
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      top: 4px;
+      left: 4px;
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      top: 1px;
+      left: 8px;
+      width: 14px;
+      height: 28px;
+    }
   }
 }

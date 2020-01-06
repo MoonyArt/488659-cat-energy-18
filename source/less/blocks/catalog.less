@@ -23,6 +23,11 @@
   border-top: 1px solid @white-five-color;
 }
 
+.catalog__product-image {
+  width: 140px;
+  height: 144px;
+}
+
 .catalog__product-info {
   display: flex;
   flex-direction: column;
@@ -180,11 +185,21 @@
   }
 
   .catalog__image-link {
-    align-self: center;
     position: absolute;
     bottom: 305px;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .catalog__product-image {
+    width: 324px;
+    height: 172px;
+
+    &--big {
+      width: 324px;
+      height: 208px;
+    }
   }
 
   .catalog__product-info {

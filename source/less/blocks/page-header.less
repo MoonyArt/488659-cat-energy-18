@@ -3,6 +3,12 @@
   border-bottom: 1px solid @white-five-color;
 }
 
+@media (min-width: @tablet-width) {
+  .page-header {
+    border-bottom: none;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .page-header--index {
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, @white-color 50%, @leaf-color 50%);

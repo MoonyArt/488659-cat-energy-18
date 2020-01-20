@@ -80,24 +80,24 @@
           <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__wrapper">
 
-              <fieldset class="form__personal-info">
-                <legend class="form__title visually-hidden">Персональная информация кота</legend>
+              <fieldset class="form__block form__personal-info">
+                <legend class="form__title form__title-personal visually-hidden">Персональная информация кота</legend>
                 <p class="form__box">
                   <label class="form__label" for="cat-name">Имя:<sup>*</sup></label>
                   <input class="form__text-field" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
                 </p>
                 <p class="form__box">
-                  <label class="form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+                  <label class="form__label" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
                   <input class="form__text-field" id="cat-weight" type="text" name="cat-weight" placeholder="7" required>
                 </p>
                 <p class="form__box">
-                  <label class="form__label" for="cat-age">Возраст (лет):</label>
+                  <label class="form__label" for="cat-age">Возраст&nbsp;(лет):</label>
                   <input class="form__text-field" id="cat-age" type="text" name="cat-age" placeholder="7">
                 </p>
               </fieldset>
 
-              <fieldset class="form__program-type">
-                <legend class="form__title visually-hidden">Тип программы</legend>
+              <fieldset class="form__block form__program-type">
+                <legend class="form__title form__title-program visually-hidden">Тип программы</legend>
                 <ul class="form__list">
                   <li class="form__item">
                     <input class="form__radio-field" id="program-slim" type="radio" name="program-slim" value="slim" checked>
@@ -116,28 +116,28 @@
 
             </div>
 
-            <fieldset class="form__contact-info">
-              <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <fieldset class="form__block form__contact-info">
+              <legend class="form__title form__title-contact">Контактные данные (владельца кота)</legend>
               <p class="form__box">
-                <label class="form__label" for="user-email">E-mail:<sup>*</sup></label>
+                <label class="form__label" for="user-email">E-&nbsp;mail:<sup>*</sup></label>
                 <input class="form__text-field form__email-field" id="user-email" type="email" name="user-email" value="kuklachev@gmail.com">
               </p>
               <p class="form__box">
-                <label class="form__label" for="user-phone">E-mail:<sup>*</sup></label>
+                <label class="form__label" for="user-phone">Телефон:<sup>*</sup></label>
                 <input class="form__text-field form__tel-field" id="user-phone" type="tel" name="user-phone" value="8 (960) 900-60-90">
               </p>
             </fieldset>
 
-            <fieldset class="form__comment">
-              <legend class="form__title">Комментарий</legend>
+            <fieldset class=" form__block form__comment">
+              <legend class="form__title form__title-comment">Комментарий</legend>
               <p class="form__box">
                 <label class="form__label visually-hidden" for="comment">Текст комментария</label>
                 <textarea class="form__text-field form__textarea-field" id="comment" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
               </p>
             </fieldset>
 
-            <fieldset class="form__add">
-              <legend class="form__title">Дополнительно</legend>
+            <fieldset class="form__block form__add">
+              <legend class="form__title form__title-add">Дополнительно</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <input class="form__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
